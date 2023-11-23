@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    dfgf
+</body>
+<script>
+fetch('/music/playlists')
+  .then(response => {
+    if (response.ok) {
+      return response.json();
+    } else {
+      throw new Error('Error: ' + response.status);
+    }
+  })
+  .then(data => {
+    // Process the response data
+    console.log(data);
+  })
+  .catch(error => {
+    // Handle any errors that occurred during the request
+    console.log(error);
+  });
+</script>
+</html>
