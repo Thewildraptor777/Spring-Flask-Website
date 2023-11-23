@@ -1,4 +1,4 @@
-package com.music.web.MySQL;
+package com.music.web.database;
 
 import java.util.List;
 
@@ -36,7 +36,7 @@ public class Check {
     }
 
     public static void main(String[] args) {
-        Check check = new Check("dev2", "test");
+        Check check = new Check("dev", "tester");
         System.out.println(check.getPlaylistData());
     }
 }

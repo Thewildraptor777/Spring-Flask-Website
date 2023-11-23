@@ -1,4 +1,4 @@
-package com.music.web.MySQL;
+package com.music.web.database;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

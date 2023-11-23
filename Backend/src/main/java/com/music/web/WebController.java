@@ -4,13 +4,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import com.music.web.MySQL.Check;
+import com.music.web.database.Check;
 
 @Controller
 public class WebController {
     @GetMapping("/") 
     public String website(Model model) {
-        Check user=new Check("dev", "test");
+        Check user=new Check("dev", "tester");
         model.addAttribute("test", user.getPlaylistData());
         return "index.html";
     }
